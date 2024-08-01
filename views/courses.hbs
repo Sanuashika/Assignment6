@@ -1,0 +1,41 @@
+<div class="main row">
+    <div class="col-md-12">
+        <br>
+        <h2>
+            Courses
+            <a href="/courses/add" class="btn btn-primary">Add New Course </a>
+        </h2>
+        <hr />
+
+        <table class="table" style="background: white;">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Course Code</th>
+                    <th>Course Description </th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each courses }}
+                    <tr>
+                        <td>{{ courseId }}</td>
+                        <td>
+                            <a href="/course/{{courseId}}">{{ courseCode }} {{ lastName }}</a>
+                        </td>
+                        <td><a href="/students?course={{courseId}}">{{ courseDescription}}</a></td>
+                        <td><a  class="btn btn-danger" href="/course/delete/{{courseId}}"> Remove </a></td>
+                    </tr>
+                {{/each}}
+            </tbody>
+
+        </table>
+
+        
+    </div>
+    {{#unless students }}
+    <div class="col-md-12 text-center">
+        <strong> {{ message }}</strong>
+    </div>
+    {{/unless }}
+</div>

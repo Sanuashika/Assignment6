@@ -1,0 +1,161 @@
+<div class="row">
+	<main class="col-md-12">
+
+
+
+		<!-- Start your code here -->
+		<!-- Table -->
+		<div class="my-4 pt-4">
+			<h3>Table</h3>
+
+			<table class="table">
+				<thead>
+					<caption>Table One: Food Menu</caption>
+					<tr>
+						<th>No/Day</th>
+						<th>Breakfast</th>
+						<th>Lunch</th>
+						<th>Dinner</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Monday</td>
+						<td rowspan="2">Oat Meal</td>
+						<td>Fried Rice</td>
+						<td>Steak</td>
+					</tr>
+					<tr>
+						<td>Tuesday</td>
+						<td>Hot Dogs and Fries</td>
+						<td>Pizza</td>
+					</tr>
+					<tr>
+						<td>Wednesday</td>
+						<td>Cereal</td>
+						<td colspan="2">Italian Food</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td>No/Day</td>
+						<td>Breakfast</td>
+						<td>Lunch</td>
+						<td>Dinner</td>
+					</tr>
+				</tfoot>
+			</table>
+			<br>
+			<table class="my-4 table">
+				<thead>
+					<caption>Table Two: Simple Invoice</caption>
+					<tr>
+						<th>No</th>
+						<th>Item</th>
+						<th>Qnty</th>
+						<th>Cost (CAD)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>1</td>
+						<td>Book</td>
+						<td>3</td>
+						<td>40.00</td>
+					</tr>
+					<tr>
+						<td>2</td>
+						<td>Pencil</td>
+						<td rowspan="2">10</td>
+						<td>20.0</td>
+					</tr>
+					<tr>
+						<td>3</td>
+						<td>Pen</td>
+						<td>30.0</td>
+					</tr>
+				</tbody>
+				<tfoot>
+					<tr>
+						<td colspan="2">Total</td>
+						<td>23</td>
+						<td>90.0</td>
+					</tr>
+				</tfoot>
+			</table>
+		</div>
+
+		<!-- List -->
+		<div class="my-4 pt-4">
+			<h3> Lists of Items</h3>
+			<ol>
+				<li><a href="https://en.wikipedia.org/wiki/Banana">Banana</a></li>
+				<li>Apple</li>
+				<li>Laptop</li>
+				<li>Television</li>
+				<li>
+					Car
+					<ul>
+						<li>Nission</li>
+						<li>Toyota Corolla</li>
+						<li><a href="https://www.bmw.ca/en/home.html">BMW</a></li>
+						<li>GMC</li>
+					</ul>
+				</li>
+				<li>Airplain</li>
+			</ol>
+			<p>
+				HTML provides various list tags that help organize content in a structured manner. The main types of lists are ordered lists <code>ol</code> for numbered items, unordered lists <code>ul</code> for bulleted items, and definition lists <code>dl</code> for terms and descriptions. Each item in ordered and unordered lists is enclosed in a <code>li</code> (list item) tag, while definition lists use <code>dt</code> (definition term) and <code>dd</code> (definition description) tags. These lists enhance readability and structure, making web content more accessible and user-friendly.
+			</p>
+		</div>
+
+		<hr>
+		<!-- Images -->
+		<div class="my-4 pt-4">
+			<h3>Images Information</h3>
+			<table class="table">
+				<tr>
+					<td width:30%> <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Snowboarder_in_halfpipe.jpg" style="width:340px; height:350px" alt="Image Alternative One"/> </td>
+					<td width:30%> <img src="https://upload.wikimedia.org/wikipedia/commons/3/3b/Image_of_Bruce_Peel_Special_Collections.jpg" style="width:340px; height:350px" alt="Image Alternative Two:Library"/> </td>
+					<td width:30%> <img src="https://img.freepik.com/free-photo/view-cooked-crawfish_23-2150426277.jpg" style="width:340px; height:350px" alt="Image Alternative Three: Lobster"/> </td>
+				</tr>
+			</table>
+			<p>
+				The <code>img</code> tag in HTML is used to embed images into web pages, enhancing visual appeal and providing contextual information. This tag requires the <code>src</code> attribute to specify the image file's path and the alt attribute to provide alternative text for accessibility. Additional attributes like width and height can be used to control the image dimensions. By incorporating images, the <code>img</code> tag helps create more engaging and informative web content.
+			</p>
+		</div>
+
+		<hr>
+		<!-- Audio -->
+		<div class="my-4 pt-4">
+			<h3>Audio Information</h3>
+			<audio controls autoplay>
+				<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.mp3" type="audio/mp3">
+				<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-audio.ogg" type="video/ogg">
+				Your browser does not support the video tag.
+			</audio>
+			<p>
+				HTML5 introduces the <code>audio</code> tag, which allows you to embed audio content directly into web pages. This tag supports various audio formats such as mp3 and Ogg. The <code>audio</code> tag includes attributes like controls to display playback controls, autoplay to start the audio automatically, loop to play the video continuously, and muted to start the audio without sound. Using the <code>audio</code> tag enhances user engagement by providing multimedia experiences without the need for external plugins.
+			</p>
+		</div>
+
+		<hr>
+		<!-- Video -->
+		<div class="my-4 pt-4">
+			<h3>Video Information</h3>
+			<video width="620" height="440" controls autoplay>
+				<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.mp4" type="video/mp4">
+				<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.ogg" type="video/ogg">
+				<source src="https://pat-crawford-sdds.netlify.app/shared/fall-2021/web700/A3/sample-video.webm" type="video/webm">
+				Your browser does not support the video tag.
+			</video>
+			<p>
+				HTML5 introduces the <code>video</code> tag, which allows you to embed video content directly into web pages. This tag supports various video formats such as MP4, WebM, and Ogg. The <code>video</code> tag includes attributes like controls to display playback controls, autoplay to start the video automatically, loop to play the video continuously, and muted to start the video without sound. Using the <code>video</code> tag enhances user engagement by providing multimedia experiences without the need for external plugins.
+			</p>
+		</div>
+		<!-- End your code here  -->
+
+
+
+	</main>
+</div>

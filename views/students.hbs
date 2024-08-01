@@ -1,0 +1,52 @@
+<div class="main row">
+    <div class="col-md-12">
+        <br>
+        <h2>
+            Students
+            <a href="/students/add" class="btn btn-primary">Add New Student </a>
+        </h2>
+        <hr />
+
+        <table class="table" style="background: white;">
+            <thead>
+                <tr>
+                    <th>Student No</th>
+                    <th>Full Name </th>
+                    <th>Email</th>
+                    <th>Address</th>
+                    <th>Status</th>
+                    <th>Course ID</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each students}}
+                    <tr>
+                        <td>{{ studentNum}}</td>
+                        <td>
+                            <a href="/student/{{studentNum}}">{{ firstName }} {{ lastName }}</a>
+                        </td>
+                        <td>
+                            <a href="mailto:{{ email }}">{{ email}}</a>
+                        </td>
+                        <td>{{ addressStreet}}</td>
+                        <td>{{ status}}</td>
+                        <td><a href="/students?course={{ course }}">{{ course}}</a></td>
+                        <td><a  class="btn btn-danger" href="/student/delete/{{studentNum}}"> Remove </a></td>
+                    </tr>
+                {{else}}
+                    <tr>
+                        <td colspan="7"> No Students</td>
+                    </tr>
+                {{/each}}
+            </tbody>
+
+        </table>
+        
+    </div>
+    {{#unless students }}
+    <div class="col-md-12 text-center">
+        <strong> {{ message }}</strong>
+    </div>
+    {{/unless }}
+</div>

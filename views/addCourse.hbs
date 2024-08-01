@@ -1,0 +1,26 @@
+<div class="main row">
+    <div class="col-md-12">
+        <br>
+        <h2>Add Course</h2>
+        <hr />
+        
+         <form  method="post" action="/courses/add"> 
+            <div class="row"> 
+                <div class="col-md-3"> 
+                    <div class="form-group"> 
+                        <label for="courseDescripMon">Course Code</label> 
+                        <input class="form-control" id="courseCode" name="courseCode" type="text" required/> 
+                    </div> 
+                </div> 
+                <div class="col-md-9"> 
+                    <div class="form-group"> 
+                        <label for="courseDescripMon">Course Description</label> 
+                        <input class="form-control" id="courseDescription" name="courseDescription" type="text"  required/> 
+                    </div> 
+                </div> 
+            </div> 
+            <hr />
+            <input type="submit" class="btn btn-primary float-right" value="Add Course" /><br /><br /><br />
+        </form>
+    </div>
+</div>
