@@ -1,4 +1,17 @@
+/********************************************************************************* 
+Add the following declaration at the top of your server.js file:
+/*********************************************************************************
+* WEB700 – Assignment 06
+* I declare that this assignment is my own work in accordance with Seneca Academic Policy. No part
+* of this assignment has been copied manually or electronically from any other source
+* (including 3rd party web sites) or distributeds to other students.
+*
+* Name: Ashika Sapkota ID: 143067239 Date: 08/01/2024
+*
+* Online (vercel) Link: https://assignmen6-ashika.vercel.app/
+* Github Link: https://github.com/Sanuashika/Assignment6
 
+********************************************************************************/
 var HTTP_PORT = process.env.PORT || 8080;
 var express = require('express');
 var exphbs = require('express-handlebars');
